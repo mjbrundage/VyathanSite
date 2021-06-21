@@ -1,4 +1,4 @@
-# Vyathan
+# Vyathan.com
 
 ## Professional Website Development Portfolio Site
 
