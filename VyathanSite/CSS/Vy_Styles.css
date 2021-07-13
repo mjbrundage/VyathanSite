@@ -8,16 +8,18 @@
     Vy_Styles.css
 */
 
+/* Color Combination: Ivory - #EEEDE7, Gray - #868B8E, Pewter - #B9B7BD, Scallop Seashell - #E7D2CC */
+
 /* Main Structural Styles */
 
 html {
-    background-color: #FFF;
+    background-color: #868B8E;
     margin-left: 5%;
     margin-right: 5%;
 }
 
 body {
-    background-color: #FFF;
+    background-color: #B9B7BD;
     font-family: 'Trebuchet MS', Helvetica, sans-serif;
     font-size: 16px;
     line-height: 1.5em;
@@ -27,10 +29,12 @@ body {
 
 a:link {
     text-decoration: none;
+    color: #EEEDE7;
 }
 
 a:visited {
     text-decoration: none;
+    color: #E7D2CC;
 }
 
 a:active {
@@ -147,7 +151,7 @@ article > ul ul {
 /* Footer Styles */
 
 footer {
-    background-color: #D5CFBF;
+    background-color: #868B8E;
     color: #454A3D;
     text-align: center;
 }
