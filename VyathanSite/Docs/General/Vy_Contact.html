@@ -23,13 +23,68 @@
             <ul id="MainMenu">
                 <li><a href="../../Vy_Index.html">Home</a></li>
                 <li><a href="Vy_Services.html">Services</a></li>
-                <li><a href="Vy_OurPortfolio.html">Portfolio</a></li>
+                <li><a href="Vy_Portfolio.html">Portfolio</a></li>
                 <li><a href="Vy_Contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <article>
+        <h2>Let's Talk</h2>
+        <section id="LeftColumn2" >
+            <img src="../../Images/Img_4516.JPG" alt="Beach Sunset" />
+        </section>
 
+        <section id="RightColumn2" >
+            <form id="contact" action="http://www.example.com/survey" method="POST" >
+                <fieldset id="custInfo">
+                    <!-- <div class="formrow"> ? -->
+
+                    <legend>Contact <strong>Vyathan Design</strong> for all your website needs!</legend>
+
+                    <div class="formRow">
+                        <label for="FirstName">First Name</label>
+                        <input FirstName="CustFirstName" id="FirstName" type="text" placeholder="Enter Your First Name" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="LastName">Last Name</label>
+                        <input LastName="CustLastName" id="LastName" type="text" placeholder="Enter Your Last Name" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="Email">Email</label>
+                        <input Email="CustEmail" id="Email" type="email" placeholder="Enter Your Email Address" />
+                    </div>
+
+                    <div class="formRow">
+                        <label for="Phone">Phone</label>
+                        <input Phone="CustPhone" id="Phone" type="tel" placeholder="Enter Your Phone Number" />
+                    </div>
+
+                    <div class="formRow">
+                        <label>How would you prefer a response?</label>
+                            <fieldset id="optGroup">
+                                <label for="cEmail">Email</label>
+                                <input name="response" id="cEmail" value="Email" type="radio" />
+                                <label for="cNo">Phone</label>
+                                <input name="response" id="cPhone" value="Phone" type="radio" />
+                                <label for="cEither">Either</label>
+                                <input name="response" id="cEither" value="Either" type="radio" />
+                            </fieldset>
+                    </div>
+
+                    <div>
+                        <label for="quesBox">How can we help you?</label>
+                        <textarea name="custQuery" id="quesBox" type="text" placeholder="Your Query Here"></textarea>
+                    </div>
+
+                    <div class="formRow">
+                        <input name="mailMe" id="mailCB" value="yes" type="checkbox" />
+                        <label for="mailCB">Add Me to your newsletter mailing list!</label>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </article>
     <aside>
 
