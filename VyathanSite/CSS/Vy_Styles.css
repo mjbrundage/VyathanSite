@@ -26,46 +26,11 @@ body {
     line-height: 1.5em;
 }
 
-/* Background Image Styles 
-
-.bg-img1 {
-    background-image: url("../Imgs/pexels-pixabay-39284.jpg");
-    min-height: 1200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-.bg-img2 {
-    background-image: url("../Imgs/pexels-pixabay-39284.jpg");
-    min-height: 1200px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-}
-
-Center Div Styles 
-
-.center-screen {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-top: -50px;
-    margin-left: -50px;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    justify-content: center;
-  } 
-  */
-
 /* Background Image Styles */
 
 .bg-img1 {
     position: relative; 
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -87,10 +52,19 @@ Center Div Styles
 .center-screen {
     position: relative;
     color: #000;  
-    font-size: 8em;
+    font-size: 3em;
     line-height: 0.9;
     text-align: center;
     background: transparent;
+}
+
+#Logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 2em;
+    display: flex;
+    float: left;
 }
 
 /* Link Styles */
@@ -120,6 +94,9 @@ a:focus {
 /* Horizontal Navigation */
 
 #MainMenu {
+    position: absolute;
+    top: 0;
+    right: 0;
     margin: auto;
     margin-top: 1em;
     width: 60%;
@@ -127,8 +104,6 @@ a:focus {
     text-align: center;
     font-size: 1.75;
     font-variant: small-caps;
-    position: relative;
-    float: right;
 }
 
 #MainMenu li {
@@ -140,7 +115,7 @@ a:focus {
 }
 
 #MainMenu a {
-    display: block;
+    display: flex;
     padding: 1%;
     text-decoration: none;
     background-color: #D2CDB4;
