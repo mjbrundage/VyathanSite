@@ -8,24 +8,25 @@
     Vy_Styles.css
 */
 
-/* Color Combination: Ivory - #EEEDE7, Gray - #868B8E, Pewter - #B9B7BD, Scallop Seashell - #E7D2CC */
-
 /* Main Structural Styles */
 
 html {
-    background-color: #868B8E;
-    margin-left: 5%;
-    margin-right: 5%;
+    background-color: #D2CDB4;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 1440px;
+    min-width: 640px;
 }
 
 body {
-    background-color: #B9B7BD;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    background-color: #FFF;
+    font-family: 'Century Gothic', sans-serif;
     font-size: 16px;
     line-height: 1.5em;
 }
 
-/* Background Image Styles */
+/* Background Image Styles 
 
 .bg-img1 {
     background-image: url("../Imgs/pexels-pixabay-39284.jpg");
@@ -45,7 +46,7 @@ body {
     position: relative;
 }
 
-/* Center Div Styles */
+Center Div Styles 
 
 .center-screen {
     position: absolute;
@@ -55,18 +56,53 @@ body {
     margin-left: -50px;
     width: 100px;
     height: 100px;
-  }
+    align-items: center;
+    justify-content: center;
+  } 
+  */
+
+/* Background Image Styles */
+
+.bg-img1 {
+    position: relative; 
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bg-img1::before {    
+      content: "";
+      background-image: url('../Imgs/pexels-pixabay-39284.jpg');
+      background-size: cover;
+      position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;
+      opacity: 0.75;
+}
+
+.center-screen {
+    position: relative;
+    color: #000;  
+    font-size: 8em;
+    line-height: 0.9;
+    text-align: center;
+    background: transparent;
+}
 
 /* Link Styles */
 
 a:link {
     text-decoration: none;
-    color: #EEEDE7;
+    color: #211911;
 }
 
 a:visited {
     text-decoration: none;
-    color: #E7D2CC;
+    color: #211911;
 }
 
 a:active {
@@ -85,80 +121,154 @@ a:focus {
 
 #MainMenu {
     margin: auto;
+    margin-top: 1em;
     width: 60%;
-    font-family: 'Trebuchet MS', Helvetica, sans-serif;
+    font-family: 'Century Gothic', sans-serif;
     text-align: center;
     font-size: 1.75;
     font-variant: small-caps;
+    position: relative;
     float: right;
 }
 
 #MainMenu li {
     display: block;
-    width: 17%;
+    width: 15%;
     float: left;
     margin-right: 1%;
-    border: 1px solid #FFF;
+    border: 1px solid #000;
 }
 
 #MainMenu a {
     display: block;
     padding: 1%;
     text-decoration: none;
-    background-color: #384C70;
-    color: #FFF;
+    background-color: #D2CDB4;
+    color: #000;
 }
 
 #MainMenu a:hover {
-    background-color: #1C438B;
-    color: #fff;
+    background-color: #FFF;
+    color: #000;
 }
 
 /* Heading Styles */
 
 h1 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 2em;
     font-variant: small-caps;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 h2 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 1.75em;
     font-variant: small-caps;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 h3 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 1.5em;
     font-variant: small-caps;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 h4 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 1.4em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 h5 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 1.35em;
+    padding-top: .5em;
+    padding-bottom: .5em;
 }
 
 h6 {
-    color: #454A3D;
+    color: #000;
     text-align: center;
-    background-color: #D5CFBF;
+    background-color: #FFF;
     font-size: 1.25em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+}
+
+/* Left Column Styles */
+
+section#LeftColumn {
+    clear: left;
+    float: left;
+    width: 30%;
+    height: 570px;
+    background-color: #FFF;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 3%;
+}
+
+section#LeftColumn2 {
+    clear: left;
+    float: left;
+    width: 60%;
+    height: 650px;
+    background-color: #FFF;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 3%;
+}
+
+section#LeftColumn2 img {
+    display: block;
+    width: 100%;
+}
+
+/* Right Column Styles */
+
+section#RightColumn {
+    float: left;
+    width: 60%;
+    height: 570px;
+    background-color: #FFF;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 3%;
+}
+
+section#RightColumn img {
+    display: block;
+    width: 100%;
+}
+
+section#RightColumn2 {
+    float: left;
+    width: 30%;
+    height: 650px;
+    background-color: #FFF;
+    padding-top: 3%;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    padding-bottom: 3%;
 }
 
 /* Image Styles */
@@ -168,22 +278,63 @@ body > header > img {
     width: 100%;
 }
 
-/* List Styles */
+/* Form Layout Styles */
 
-article > ul {
-    list-style-type: disc;
-    padding-left: 25px;
+form#contact {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
 }
 
-article > ul ul {
-    list-style-type: decimal;
-    padding-left: 30px;
+form#contact > fieldset {
+    background-color: #D2CDB4;
+    border-radius: 0px;
+    -webkit-flex: 1 1 300px;
+    flex: 1 1 300px;
+    font-size: 16px;
+    padding: 1rem;
+}
+
+div.formRow {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin: 1rem;
+}
+
+div.formRow > * {
+    -webkit-flex: 1 1 150px;
+    flex: 1 1 150px;
+}
+
+/* Legend Styles */
+
+legend {
+    background-color: #D2CDB4;
+    color: #000;
+    font-family: 'Century Gothic', sans-serif;
+    text-align: center;
+    font-size: 1.5em;
+    font-variant: small-caps;
+    border: 1px solid #000;
+    padding: 5px;
+}
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 1rem;
+    height: 125px;
+    width: 98%;
 }
 
 /* Footer Styles */
 
 footer {
-    background-color: #868B8E;
-    color: #454A3D;
+    background-color: #B4B9D2;
+    color: #211911;
     text-align: center;
+    margin-top: 2em;
 }
